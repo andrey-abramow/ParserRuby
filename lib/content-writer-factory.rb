@@ -8,7 +8,7 @@ class ContentWriterFactory
      return UserWriter.new
     end
     if filename['post']
-     return  PostWriter.new
+     return PostWriter.new
     end
   end
 
