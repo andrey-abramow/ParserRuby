@@ -15,4 +15,5 @@ class ContentWriter
   def write_row(table,row)
 
   end
+
 end

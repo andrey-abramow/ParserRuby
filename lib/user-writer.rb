@@ -1,5 +1,6 @@
 require_relative 'content-writer'
 require_relative '../Tables/user'
+
 class UserWriter < ContentWriter
 
   protected
@@ -9,7 +10,7 @@ class UserWriter < ContentWriter
       user = User.new
       user.new?(true)
     end
-    return user
+    user
   end
 
   def write_row(user,row)

@@ -26,8 +26,8 @@ class Database
   end
 
   def _create_database
-    @db.execute "CREATE TABLE IF NOT EXISTS User(id INTEGER AUTO INCREMENT PRIMARY KEY, name TEXT, last_name TEXT, age TEXT)"
-    @db.execute "CREATE TABLE IF NOT EXISTS Post(id INTEGER AUTO INCREMENT PRIMARY KEY, name TEXT, text TEXT)"
+    @db.execute "CREATE TABLE IF NOT EXISTS User(id INTEGER PRIMARY KEY   AUTOINCREMENT, name TEXT, last_name TEXT, age TEXT)"
+    @db.execute "CREATE TABLE IF NOT EXISTS Post(id INTEGER PRIMARY KEY   AUTOINCREMENT, name TEXT, text TEXT)"
    end
 
 end

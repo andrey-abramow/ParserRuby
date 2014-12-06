@@ -1,5 +1,6 @@
 require_relative 'content-writer'
 require_relative '../Tables/post'
+
 class PostWriter < ContentWriter
   protected
   def get_table_info_by_id(id)
@@ -8,7 +9,7 @@ class PostWriter < ContentWriter
       post = Post.new
       post.new?(true)
     end
-    return post
+    post
   end
 
   def write_row(post,row)
@@ -17,4 +18,5 @@ class PostWriter < ContentWriter
     post.text= row['text']
     post.save
   end
+
 end

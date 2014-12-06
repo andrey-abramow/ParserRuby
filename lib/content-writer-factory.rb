@@ -10,6 +10,6 @@ class ContentWriterFactory
     if filename['post']
      return  PostWriter.new
     end
-
   end
+
 end
