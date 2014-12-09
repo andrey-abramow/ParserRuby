@@ -3,7 +3,7 @@ require "sqlite3"
 class Database
   include ::Singleton
 
-  FILE_NAME = 'ActiveRecord/Databases/db.db'
+  FILE_NAME = 'active_record/databases/db.db'
 
   def execute(*args)
     @db.execute(*args)
